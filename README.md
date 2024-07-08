@@ -22,5 +22,3 @@ git commit -m "Update Android folder"
 git push origin main
 ```
 
-###
-test.ljt
