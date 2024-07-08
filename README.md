@@ -24,4 +24,3 @@ git push origin main
 
 ###
 test.ljt
-나야나 나야나 헤이 안녕
