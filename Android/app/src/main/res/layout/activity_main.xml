@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="140dp"
             android:layout_height="46dp"
-            android:text="헬로우 수정했음"
+            android:text="헬로우 월드"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
