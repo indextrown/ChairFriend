@@ -23,8 +23,8 @@ class splash : AppCompatActivity() {
 
         Handler().postDelayed(Runnable {
             // 앱의 MainActivity로 넘어가기
-            val intet = Intent(this@splash,MainActivity::class.java)
-            startActivity(intent)
+            val i = Intent(this@splash,MainActivity::class.java)
+            startActivity(i)
             // 현재 액티비티 닫기
             finish()
         }, 3000) // 3초
