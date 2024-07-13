@@ -45,3 +45,10 @@ git push origin main
 ```
 
 #### branch
+```bash
+git clone https://github.com/indextrown/ChairFriend.git 브랜치명
+git checkout -b '브랜치명'  // 이건 최초 한번만
+git add .
+git commit -m "브랜치명: 하고싶은말"
+git push origin 브랜치명
+```
