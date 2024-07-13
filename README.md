@@ -59,7 +59,7 @@ git push origin 브랜치명
 git add .
 git commit -m "하고싶은말"
 // main코드로부터 새로운 코드를 받아온다
-git pull origin 자기브랜치명
+git pull origin main
 git push origin 자기브랜치명
 ```
 
