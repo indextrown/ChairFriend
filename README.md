@@ -52,3 +52,13 @@ git add .
 git commit -m "브랜치명: 하고싶은말"
 git push origin 브랜치명
 ```
+
+#### 항상 코드를 업로드 하기 전에 main 코드랑 동기화 필요
+``` bash
+// 지금가지 내가 했던 코드 정리
+git add .
+git commit -m "하고싶은말"
+// main코드로부터 새로운 코드를 받아온다
+git pull origin main
+git push origin 자기브랜치명
+```
