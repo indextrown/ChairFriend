@@ -66,4 +66,8 @@ git push origin 자기브랜치명
 #### 에러 발생시 
 git pull origin 자기브랜치명 --rebase
 
+#### 에러 관련 링크
+https://stackoverflow.com/questions/34118404/what-i-can-do-to-resolve-1-commit-behind-master
+
+
 
