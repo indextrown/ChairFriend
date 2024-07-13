@@ -10,6 +10,9 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    //_
+    var isLogged: Bool = false
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +20,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        
+        // #######################################################################################################################
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Main.stroyboard 가져오기
+        
+        
+        if isLogged == false {
+            // 로그인 안된 상태
+            guard let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginView") as? LoginViewController else { return }
+            window?.rootViewController = loginVC
+        } else {
+            // 로그인 된 상태
+            guard let mainVC = storyboard.instantiateViewController(withIdentifier: "MainView") as? ViewController else { return }
+            window?.rootViewController = mainVC
+        }
+        
+        // #######################################################################################################################
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
