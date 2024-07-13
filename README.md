@@ -1,6 +1,25 @@
 # ChairFriend
 - 휠체어를 사용하는 사회적 취약 계층을 위한 정보 제공 앱
 
+<table>
+    <tr>
+        <td align="center">
+            <img src="https://github.com/user-attachments/assets/34f45dcd-fa51-4170-9d1a-cb0220105eba" alt="Simulator Screen Recording - iPhone 15 Pro Max - 2024-07-12 at 20 07 43" style="width: 200px;">
+            <br>
+            <figcaption>iOS</figcaption>
+        </td>
+        <td align="center">
+            <img src="" alt="Simulator Screen Recording - iPhone 15 Pro Max - 2024-07-12 at 17 58 27" style="width: 200px;">
+            <br>
+            <figcaption>Android</figcaption>
+        </td>
+
+    </tr>
+</table>  
+
+
+
+
 ## ⏲️ 개발 기간 
 - 2024.06.25 ~ 
   
