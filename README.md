@@ -15,7 +15,6 @@
             <br>
             <figcaption>Android</figcaption>
         </td>
-
     </tr>
 </table>  
 
