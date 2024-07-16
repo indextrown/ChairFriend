@@ -1,6 +1,8 @@
 package com.example.chairfriend
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // findViewById를 사용하여 Button 객체를 초기화
+        val button1 = findViewById<Button>(R.id.Button1)
+
+        // 버튼 클릭 리스너 설정
+        button1.setOnClickListener {
+            val intent = Intent(this, Iogin::class.java)
+            startActivity(intent)
         }
     }
 }
