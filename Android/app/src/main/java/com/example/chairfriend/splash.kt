@@ -7,7 +7,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.os.Handler
 import android.content.Intent
-
+import android.os.Looper
+import android.util.Log
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 
 class splash : AppCompatActivity() {
@@ -21,13 +24,27 @@ class splash : AppCompatActivity() {
             insets
         }
 
-        Handler().postDelayed(Runnable {
-            // 앱의 MainActivity로 넘어가기
-            val intet = Intent(this@splash,MainActivity::class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            // 앱의 Main4Activity로 넘어가기
+            val intent = Intent(this@splash, Main4Activity::class.java)
             startActivity(intent)
             // 현재 액티비티 닫기
             finish()
         }, 3000) // 3초
 
+        val windowInsetsController = WindowCompat.getInsetsController(window, window.decorView)
+        if (windowInsetsController != null) {
+            val isImmersiveModeEnabled =
+                (windowInsetsController.systemBarsBehavior == WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE)
+
+            if (isImmersiveModeEnabled) {
+                Log.i("Is on?", "Turning immersive mode off.")
+                windowInsetsController.show(WindowInsetsCompat.Type.systemBars())
+            } else {
+                Log.i("Is on?", "Turning immersive mode on.")
+                windowInsetsController.hide(WindowInsetsCompat.Type.systemBars())
+                windowInsetsController.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+            }
+        }
     }
 }
