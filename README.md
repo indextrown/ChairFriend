@@ -1,6 +1,8 @@
 # ChairFriend
 - 휠체어를 사용하는 사회적 취약 계층을 위한 정보 제공 앱
 
+
+
 <table>
     <tr>
         <td align="center">
@@ -13,7 +15,6 @@
             <br>
             <figcaption>Android</figcaption>
         </td>
-
     </tr>
 </table>  
 
