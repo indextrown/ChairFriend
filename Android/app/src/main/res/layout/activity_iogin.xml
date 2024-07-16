@@ -23,18 +23,18 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="59dp"
         android:ems="10"
-        android:inputType="numberPassword"
+        android:hint="********"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:hint="********"/>
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -73,7 +73,7 @@
         android:layout_marginEnd="229dp"
         android:text="비밀번호"
         android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
