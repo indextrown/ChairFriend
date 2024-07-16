@@ -20,9 +20,6 @@
 
 <!-- <img src="https://github.com/user-attachments/assets/34f45dcd-fa51-4170-9d1a-cb0220105eba" alt="Simulator Screen Recording - iPhone 15 Pro Max - 2024-07-12 at 20 07 43" style="width: 200px;"> -->
 
-
-
-
 ## ⏲️ 개발 기간 
 - 2024.06.25 ~ 
   
@@ -77,7 +74,7 @@ git push origin 브랜치명
 
 #### 항상 코드를 업로드 하기 전에 main 코드랑 동기화 필요
 ``` bash
-// 지금가지 내가 했던 코드 정리
+//  코드 정리
 git add .
 git commit -m "하고싶은말"
 // main코드로부터 새로운 코드를 받아온다
