@@ -20,31 +20,44 @@
             android:id="@+id/imageView2"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="92dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/chair_friend1"
-            tools:layout_editor_absoluteX="130dp"
-            tools:layout_editor_absoluteY="290dp"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="200dp"
             android:layout_height="60dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="106dp"
             android:backgroundTint="#FF4B55"
             android:text="Log In"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="532dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="200dp"
             android:layout_height="60dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="79dp"
             android:backgroundTint="#FF999F"
             android:text="Sign UP"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="105dp"
-            tools:layout_editor_absoluteY="592dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
