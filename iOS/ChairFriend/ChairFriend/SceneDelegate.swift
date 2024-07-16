@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if isLogged == false {
             // 로그인 안된 상태
-            guard let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginView") as? LoginViewController else { return }
+            guard let loginVC = storyboard.instantiateViewController(withIdentifier: "WelcomeView") as? WelcomeViewController else { return }
             window?.rootViewController = loginVC
         } else {
             // 로그인 된 상태
