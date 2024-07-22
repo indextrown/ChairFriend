@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChairFriend"
         tools:targetApi="34">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/signup_edittext" />
+
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
         <activity
             android:name=".Iogin"
             android:exported="true">
@@ -21,7 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MyPage"
             android:exported="false" />
