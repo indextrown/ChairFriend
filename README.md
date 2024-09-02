@@ -18,8 +18,6 @@
     </tr>
 </table>  
 
-
-
 <!-- "https://github.com/user-attachments/assets/d7a068e8-2e28-4325-b6b5-ac81f3b2bb0c" -- >
 <!-- <img src="https://github.com/user-attachments/assets/34f45dcd-fa51-4170-9d1a-cb0220105eba" alt="Simulator Screen Recording - iPhone 15 Pro Max - 2024-07-12 at 20 07 43" style="width: 200px;"> -->
 
